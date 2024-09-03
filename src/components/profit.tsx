@@ -1,12 +1,17 @@
+"use client"
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
-import Calculator from './calculator'
+// import Calculator from './calculator'
 import { MainTitle } from './main-title'
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
 	weight: ['500'], // добавляем нужные веса
 })
+import dynamic from 'next/dynamic';
+
+const Calculator = dynamic(() => import('./calculator'), { ssr: false });
+
 
 export default function Profit() {
 	return (

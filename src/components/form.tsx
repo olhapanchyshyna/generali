@@ -52,6 +52,7 @@ export default function Form() {
 				utilsScript:
 					'https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js',
 				initialCountry: 'IT',
+        useFullscreenPopup: false,
 				geoIpLookup: callback => {
 					fetch('https://ipapi.co/json')
 						.then(response => response.json())
