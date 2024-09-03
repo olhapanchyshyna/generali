@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* .iti {
+  --iti-path-flags-1x: url('path/to/flags.webp');
+  --iti-path-flags-2x: url('path/to/flags@2x.webp');
+  --iti-path-globe-1x: url('path/to/globe.webp');
+  --iti-path-globe-2x: url('path/to/globe@2x.webp');
+} */
+
+.irs-bar {
+	background: #d81e05 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Стили для ползунков */
+.irs-bar-edge {
+	background: #d81e05 !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Стили для переключателей ползунка */
+.irs-slider {
+	background: #d81e05 !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.irs-single {
+	background: #d81e05 !important;
+}
+.irs-single:before {
+	background: #d81e05 !important;
+  border-top-color: #d81e05 !important;
+}
+
+.irs-slider.from {
+	background: #d81e05 !important;
+}
+
+.irs-slider.to {
+	background: #d81e05 !important;
+}
+
+.irs-handle {
+	border: 4px solid #d81e05 !important;
 }
